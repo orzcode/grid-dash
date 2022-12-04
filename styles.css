@@ -1,0 +1,15 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: 1px solid black;
+}
+
+html {
+    background-color: rgb(150, 150, 150);
+    font-size: 62.5%; /* FONTSIZE TRICK-- 1 rem = 10 px here, usually 1 rem = 16px */
+}
+
+body {
+    font-size: 1.8rem; /* FONTSIZE TRICK-- 1 rem = 10 px here, usually 1 rem = 16px */
+}

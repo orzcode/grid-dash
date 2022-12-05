@@ -13,7 +13,7 @@ html {
 }
 
 body {
-    font-size: calc(1.5rem + 0.4vw);
+    font-size: calc(1.5rem + 0.3vw);
     /* FONTSIZE TRICK-- 1 rem = 10 px here, usually 1 rem = 16px */
     /* FONTSIZE - Adding the 0.4 is for responsivity */
 }
@@ -22,39 +22,50 @@ li {
     list-style-type: none;
 }
 
-/* SIDEBAR BEGINS HERE */
+img {
+    
+}
 
+/* SIDEBAR BEGINS HERE */
+.sidebar {
+    background-color: rgb(39, 119, 184);
+    grid-column: 1 / 2;
+    grid-row: 1 / 3;
+    z-index: 2;
+    display:grid;
+    align-content: start;
+   
+    row-gap: 10%;
+}
+
+
+/* ---------  CURRENTLY NOT BEING USED ------------- */
 .sidebarContents {
     display: grid;
     background-color: rgba(50, 50, 50, 0.4);
     /* grid-template-rows: auto minmax(10%, 11%) auto minmax(10%, 11%) auto; */
     row-gap: 10%;
-    min-height:100vh;
-    padding-bottom: 90%;
+    min-height:100%;
+    padding-bottom: 100%;
 }
+/* ---------  CURRENTLY NOT BEING USED ------------- */
+
 
 .sidebarTitle {
     display: grid;
     grid-template-columns: 1fr 5fr;
-    /* grid-template-rows: 1fr; */
-    /* grid-row: 1 / 2; */
     column-gap: 10%;
 }
 .sidebarUL1 {
     display: grid;
     grid-template-columns: 1fr 5fr;
-    /* grid-template-rows: repeat(6, auto-fit); */
-    /* grid-row: 3 / 4; */
     column-gap: 10%;
 }
 .sidebarUL2 {
     display: grid;
     grid-template-columns: 1fr 5fr;
-    /* grid-template-rows: repeat(3, 1fr); */
-    /* grid-row: 5 / 6; */
     column-gap: 10%;
 }
-
 /* SIDEBAR ENDS HERE */
 
 .container {
@@ -63,17 +74,6 @@ li {
     grid-template-rows: 1fr 4fr;
     height: 100vh;
     width: 100vw;
-}
-
-.sidebar {
-    background-color: rgb(39, 119, 184);
-    grid-column: 1 / 2;
-    grid-row: 1 / 3;
-    z-index: 2;
-    
-    /* grid-template-rows: repeat(5, 1fr);
-    padding-bottom: 70%;
-    row-gap: 2rem; */
 }
 
 .header {

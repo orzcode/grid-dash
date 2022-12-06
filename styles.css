@@ -1,4 +1,4 @@
-* {
+*, *::before, *::after {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -22,8 +22,9 @@ li {
     list-style-type: none;
 }
 
-img {
-    
+img, svg {
+    display: block;
+    max-width: 100%;
 }
 
 /* SIDEBAR BEGINS HERE */
@@ -43,8 +44,7 @@ img {
     column-gap: 10%;
     
     align-items: center;
-    padding-left: 5%;
-    margin-top: 5%;
+    
 }
 
 /* ---------  CURRENTLY NOT BEING USED ------------- */

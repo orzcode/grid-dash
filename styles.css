@@ -34,7 +34,7 @@ img {
     z-index: 2;
     display:grid;
     align-content: start;
-    row-gap: 10%;
+    row-gap: 5%;
 }
 
 .sidebarTitle, .sidebarUL1, .sidebarUL2 {
@@ -44,7 +44,7 @@ img {
     
     align-items: center;
     padding-left: 5%;
-    
+    margin-top: 5%;
 }
 
 /* ---------  CURRENTLY NOT BEING USED ------------- */
@@ -78,4 +78,9 @@ img {
 .mainContent {
     grid-column: 2 / 3;
     grid-row: 2 / 3;
+    display: grid;
+}
+
+.mainContent img {
+    max-width: 50vw;
 }

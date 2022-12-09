@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    border: 1px solid black;
+    /* border: 1px solid black; */
 }
 
 html {
@@ -10,12 +10,15 @@ html {
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-size: 62.5%;
     /* FONTSIZE TRICK-- 1 rem = 10 px here, usually 1 rem = 16px */
+    
 }
 
 body {
-    font-size: calc(1.5rem + 0.3vw);
+    font-size: 2rem;
+    /* font-size: calc(1.5rem + 0.3vw); */
     /* FONTSIZE TRICK-- 1 rem = 10 px here, usually 1 rem = 16px */
     /* FONTSIZE - Adding the 0.4 is for responsivity */
+    
 }
 
 li {
@@ -24,7 +27,7 @@ li {
 
 img, svg {
     display: block;
-    max-width: 100%;
+    max-width: 80%;
 }
 
 /* SIDEBAR BEGINS HERE */
@@ -35,16 +38,21 @@ img, svg {
     z-index: 2;
     display:grid;
     align-content: start;
-    row-gap: 5%;
+    row-gap: 5rem;
+    padding-left: 3rem;
+    padding-top: 2rem;
 }
 
 .sidebarTitle, .sidebarUL1, .sidebarUL2 {
     display: grid;
     grid-template-columns: 1fr 5fr;
     column-gap: 10%;
-    
+    row-gap: 2rem;
     align-items: center;
-    
+}
+
+strong {
+    font-size:xx-large;
 }
 
 /* ---------  CURRENTLY NOT BEING USED ------------- */
@@ -62,10 +70,11 @@ img, svg {
 
 .container {
     display: grid;
-    grid-template-columns: 1fr 5fr;
+    grid-template-columns: 35rem 5fr; /*making this first col fixed means img wont auto resize*/
     grid-template-rows: 1fr 4fr;
     height: 100vh;
     width: 100vw;
+    
 }
 
 .header {
@@ -82,5 +91,6 @@ img, svg {
 }
 
 .mainContent img {
+    padding-top: 2rem;
     max-width: 50vw;
 }

@@ -92,6 +92,9 @@ strong {
     grid-column: 2 / 3;
     grid-row: 1 / 2;
     box-shadow: 1px 2px 20px 1px rgba(50, 50, 50, 0.5);
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 70% 30%;
 }
 
 .mainContent {
@@ -120,3 +123,28 @@ section {
     display: grid;
     gap: 2rem;
 }
+
+/* ------------- CARDS --------  */
+.card {
+    background-color: aliceblue;
+    box-shadow: 5px 5px 5px -5px rgba(50, 50, 50, 0.5);
+    border-radius: 8px;
+    padding: 2rem;
+    display: grid;
+    
+}
+
+.cards .card {
+    border-left: 1rem solid rgb(208, 160, 69);
+}
+
+.card img {
+    width: 3rem;
+    
+}
+
+.cardIcons {
+   
+}
+/* ------------- CARDS --------  */
+

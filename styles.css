@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    /* border: 1px solid black; */
+    /* border: 0.1px solid black; */
 }
 
 html {
@@ -12,27 +12,30 @@ html {
     /* FONTSIZE TRICK-- 1 rem = 10 px here, usually 1 rem = 16px */
     min-height: 100vh;
     max-height: 100vh;
-    
+    caret-color: transparent;
 }
 
 body {
     font-size: 2rem;
     /* font-size: calc(1.5rem + 0.3vw); */
     /* FONTSIZE TRICK-- 1 rem = 10 px here, usually 1 rem = 16px */
-    /* FONTSIZE - Adding the 0.4 is for responsivity */
-    
+    /* FONTSIZE - Adding the 0.4 is for responsivity */    
 }
 
 li {
     list-style-type: none;
 }
 
+strong {
+    font-size:xx-large;
+}
+
 img, svg {
     display: block;
     max-width: 80%;
 }
-
-/* SIDEBAR BEGINS HERE */
+/* ---------------------------------------------------- */
+/*--------------- SIDEBAR BEGINS HERE------------------ */
 .sidebar {
     background-color: rgb(39, 119, 184);
     grid-column: 1 / 2;
@@ -55,7 +58,11 @@ img, svg {
     align-items: center;
 }
 
-/*------------- MEDIA QUERIES ------------- */
+/*--------------- SIDEBAR ENDS HERE------------------ */
+/*----------------------------------------------------*/
+
+/* -------------------------------------------------- */
+/*------------------- MEDIA QUERIES ----------------- */
 
 @media only screen and (max-width: 1024px){
     .sidebar li, strong {
@@ -71,12 +78,8 @@ img, svg {
     }
     
 }
-/*------------- MEDIA QUERIES ------------- */
-
-strong {
-    font-size:xx-large;
-}
-
+/*------------- MEDIA QUERIES END HERE--------------- */
+/* -------------------------------------------------- */
 
 .container {
     display: grid;
@@ -85,16 +88,6 @@ strong {
     height: 100vh;
     width: 100vw;
     
-}
-
-.header {
-    background-color: rgb(246, 251, 251);
-    grid-column: 2 / 3;
-    grid-row: 1 / 2;
-    box-shadow: 1px 2px 20px 1px rgba(50, 50, 50, 0.5);
-    display: grid;
-    grid-template-rows: 1fr 1fr;
-    grid-template-columns: 70% 30%;
 }
 
 .mainContent {
@@ -124,7 +117,7 @@ section {
     gap: 2rem;
 }
 
-/* ------------- CARDS --------  */
+/* ---------------- CARDS --------------  */
 .card {
     background-color: aliceblue;
     box-shadow: 5px 5px 5px -5px rgba(50, 50, 50, 0.5);
@@ -136,15 +129,92 @@ section {
 
 .cards .card {
     border-left: 1rem solid rgb(208, 160, 69);
+    gap: 1rem;
 }
 
 .card img {
     width: 3rem;
-    
+    display: inline;
+    margin: 0 1rem;
 }
 
 .cardIcons {
-   
+   justify-self: end;   
 }
-/* ------------- CARDS --------  */
+/* ---------------- CARDS ---------------  */
 
+
+/* -------------------------------------------------- */
+/* ------------------- HEADER SECTION ---------------  */
+.header {
+    background-color: rgb(246, 251, 251);
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+    box-shadow: 1px 2px 20px 1px rgba(50, 50, 50, 0.5);
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 65% 35%;
+}
+
+.head1, .head2, .head3, .head4 {
+    display: grid;
+    place-items: center;
+    grid-template: 1fr / 1fr 1fr 1fr;
+    gap: 1rem;
+    /* grid-template-rows / grid-template-columns values */
+}
+
+.head2, .head4 {
+    max-width: 70%;
+    margin: auto;
+}
+
+form {
+    grid-column: 1 / 4;
+    display: grid;
+    grid-template-columns: 4rem 1fr;
+    gap: 2rem;
+    padding: 0 6rem;
+    width: 100%;
+}
+
+form button {
+    width: 5rem;
+    background-color: transparent;
+    border-color: transparent;
+    border-radius: 40rem;
+    display: grid;
+    place-items: center;
+}
+
+input {
+    border-color: transparent;
+    border-radius: 40rem;
+    padding-left: 2ch;
+    width: 80%;
+    background-color: rgba(128, 128, 128, 0.1);
+}
+
+.head4 button {
+    background-color: rgb(39, 119, 184);
+    border-color: transparent;
+    font-size:1.5rem;
+    letter-spacing: 0.1rem;
+    color: white;
+    border-radius: 22px;
+    transition: box-shadow 0.1s;
+    padding: 1ch 2ch;
+}
+
+.head4 button:hover {
+    background-color: rgb(32, 96, 147);
+    box-shadow:1px 1px 1px 1px rgb(50,50,50,0.5);
+}
+
+.head4 button:active {
+    transform: translateY(1px);
+    background-color: rgb(32, 96, 147);
+}
+
+/* ------------------- HEADER SECTION --------------  */
+/* -------------------------------------------------- */

@@ -106,15 +106,20 @@ section {
     grid-template-columns: repeat(auto-fill, minmax(30rem, 3fr))
 }
 
-.mainRight {
+.mainRightDiv {
     display: grid;
-    gap: 8rem;
+    gap: 5rem;
     align-content: start;
 }
 
 #trending, #announcements {
     display: grid;
     gap: 2rem;
+}
+
+hr {
+    margin-top: 2rem;
+    opacity: 0.5;
 }
 
 /* ---------------- CARDS --------------  */
@@ -124,7 +129,6 @@ section {
     border-radius: 8px;
     padding: 2rem;
     display: grid;
-    
 }
 
 .cards .card {
@@ -152,8 +156,8 @@ section {
     grid-row: 1 / 2;
     box-shadow: 1px 2px 20px 1px rgba(50, 50, 50, 0.5);
     display: grid;
-    grid-template-rows: 1fr 1fr;
-    grid-template-columns: 65% 35%;
+    grid-template-rows: 9.4rem 9.4rem;
+    grid-template-columns: 1fr 36rem;
 }
 
 .head1, .head2, .head3, .head4 {
@@ -165,7 +169,7 @@ section {
 }
 
 .head2, .head4 {
-    max-width: 70%;
+    width: 100%;
     margin: auto;
 }
 
@@ -174,7 +178,7 @@ form {
     display: grid;
     grid-template-columns: 4rem 1fr;
     gap: 2rem;
-    padding: 0 6rem;
+    padding: 0 2rem;
     width: 100%;
 }
 
@@ -191,7 +195,7 @@ input {
     border-color: transparent;
     border-radius: 40rem;
     padding-left: 2ch;
-    width: 80%;
+    width: 90%;
     background-color: rgba(128, 128, 128, 0.1);
 }
 
@@ -214,6 +218,10 @@ input {
 .head4 button:active {
     transform: translateY(1px);
     background-color: rgb(32, 96, 147);
+}
+
+.head3 p {
+    
 }
 
 /* ------------------- HEADER SECTION --------------  */

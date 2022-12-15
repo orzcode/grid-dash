@@ -38,6 +38,7 @@ a {
 
 strong {
     font-size:xx-large;
+    display: block;
 }
 
 button {
@@ -85,7 +86,7 @@ img, svg {
 /*------------------- MEDIA QUERIES ----------------- */
 
 @media only screen and (max-width: 1024px){
-    .sidebar li, strong {
+    .sidebar li, .sidebar strong {
         display: none;
     }
     .sidebarTitle, .sidebarUL1, .sidebarUL2 {
@@ -187,7 +188,9 @@ hr {
 
 .head2, .head4 {
     width: 100%;    
-    padding-right: 3ch;
+    padding-right: 2rem;
+    gap: 2rem;
+    margin-left: -4rem;
 }
 
 form {
@@ -241,6 +244,10 @@ input {
 
 .head3 strong{
     display: block;
+}
+
+.head3 img {
+    min-width: 50px;
 }
 
 .head3 img {

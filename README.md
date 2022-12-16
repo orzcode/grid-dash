@@ -4,4 +4,6 @@ Grid-based admin dashboard for The Odin Project. Instructions were to recreate [
 
 Mobile responsiveness was not a goal of this project however I have performed some extra work to make this mobile responsive as well. 
 
+Additionally, the side navbar was made into a 'sticky' format which was beyond the project aims.
+
 Future potential: Use javascript to manifest/pull realtime project info for cards section.

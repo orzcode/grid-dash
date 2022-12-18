@@ -131,18 +131,22 @@ section {
     /* REDUCED MIN SIZE FOR BACKUP OVERFLOW CORRECTION */
 }
 
-.mainContH5 {
+#mainLeftDiv {
+    
+}
+
+.mainContentH5 {
     font-size: 2.5rem;
     padding-bottom: 1rem;
 }
 
-.mainRightDiv {
+#mainRightDiv {
     display: grid;
     gap: 5rem;
     align-content: start;
 }
 
-.mainRightDiv .card div {
+#mainRightDiv .card div {
     display: grid;
     gap: 1rem;
 }

@@ -305,5 +305,19 @@ img[src$=".jpg"] {
     border: 1px solid black;
 }
 
-/* ------------------- HEADER SECTION --------------  */
+/* ------------------- HEADER SECTION ENDS--------------  */
 /* -------------------------------------------------- */
+
+
+
+/* .footer {
+    background-color: darkslategrey;
+    color: white;
+    margin: auto;
+    text-align: center;
+    z-index: 10;
+    position:absolute;
+    bottom: 0;
+    left: 15px;
+    width:90vw;
+} */

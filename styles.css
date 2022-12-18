@@ -4,7 +4,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    outline: 1px solid pink;
+    /* outline: 1px solid pink; */
 }
 
 html {
@@ -117,22 +117,10 @@ button {
 .mainContent {
     grid-column: 2 / 3;
     grid-row: 2 / 3;
-    display: grid;
+    display: flex;
     gap: 2rem;
     padding: 2rem;
-    grid-template-columns: 1fr 30rem;
-    /* REDUCED MIN SIZE FOR BACKUP OVERFLOW CORRECTION */
-}
-
-section {
-    display: grid;
-    gap: 2rem;
-    grid-template-columns: repeat(auto-fill, minmax(30rem, 3fr));
-    /* REDUCED MIN SIZE FOR BACKUP OVERFLOW CORRECTION */
-}
-
-#mainLeftDiv {
-    
+    flex-wrap: wrap-reverse;
 }
 
 .mainContentH5 {
@@ -140,11 +128,27 @@ section {
     padding-bottom: 1rem;
 }
 
+section {
+    display: grid;
+    gap: 2rem;
+    grid-template-columns: repeat(auto-fill, minmax(30rem, 3fr));
+}
+
+
+/* THESE WIDTHS CONTROL "RESPONSIVITY" OF FLEX AREA, DELICATE TWEAKING REQUIRED */
+#mainLeftDiv {
+    flex: 1 1 auto;
+    width: clamp(32rem, 50%, 100%);
+}
 #mainRightDiv {
     display: grid;
     gap: 5rem;
     align-content: start;
+    flex: 1 0 30rem;
+    width: clamp(30rem, 30rem, 30rem);
 }
+/* THESE WIDTHS CONTROL "RESPONSIVITY" OF FLEX AREA, DELICATE TWEAKING REQUIRED */
+
 
 #mainRightDiv .card div {
     display: grid;
